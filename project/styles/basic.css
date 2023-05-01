@@ -1,0 +1,338 @@
+@charset "utf-8";
+/* 
+	Author:     Isaac Ellingson
+	Date:       4/14/2023
+	Updated:    5/1/2023
+*/
+
+body, html {
+	height: 100%;
+	margin: 0;
+	
+	font-family: verdana, sans-serif;
+	
+	background-color: #FFF;
+}
+
+
+
+/*
+ * There's a cutoff on topbar where it stops looking okay when crushed smaller than 700px - that should be when we "react".
+ */
+
+@media (min-device-width: 700px) {
+	
+	/* Desktop and tablet styles */
+	
+	header {
+		background: linear-gradient(270deg, rgba(1,105,201,1) 0%, rgba(255,255,255,1) 90%);
+		box-shadow: -12px 4px 8px #046, 12px 4px 8px #046;
+	}
+	
+	.topbar {
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+		padding: 0;
+	}
+
+	.logo {
+		display: block;
+		width: 200px;
+		height: 200px;
+	}
+
+	.logo > img {
+		height: 100%;
+	}
+
+	.infocard {
+		display: block;
+		margin: 8px 8px 8px auto;
+		padding: 8px;
+		max-width: 300px;
+		height: 185px;
+		
+		background: rgba(255, 255, 255, 0.8);
+		box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.8);
+		
+		border-radius: 12px 12px;
+	}
+
+	.infocard > p {
+		margin: 0;
+		padding-top: 10px;
+		display: block;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	nav {
+		background: #FCF;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		
+		background: rgba(1,105,201, 1);
+		color: #FFF;
+		
+		margin: 0 auto 0 auto;
+	}
+
+	nav a {
+		flex-basis: 200px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		
+		padding: 16px 0px;
+		
+		font-size: 16px;
+		font-weight: bold;
+		
+		text-align: center;
+		text-decoration: none;
+		color: #FFF;
+	}
+
+	nav a:hover,a:active {
+		color: #ff3884;
+		text-shadow: -1px 0px 2px #000, 1px 0px 2px #000, 0px 1px 2px #000, 0px -1px 2px #000, 0px 2px 4px #000;
+	}
+
+	article {
+		padding: 30px 50px;
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 16px;
+		
+	}
+
+
+	.downloads > li {
+		list-style-type: none;
+	}
+
+	.downloads > li > p {
+		display: inline-block;
+		margin-right: 8px;
+		margin-top: 30px;
+	}
+
+	h1,h2 {
+		margin-top: 50px;
+	}
+
+	table,tr,td,th {
+		border: 2px solid #135444;
+		border-collapse: collapse;
+		padding: 4px 12px 4px 12px;
+	}
+
+	th {
+		background-color: #135444;
+		color: white;
+	}
+
+	tr:nth-child(even) {
+		background-color: rgba(74, 207, 174, 0.2);
+	}
+
+	li {
+		margin: 25px 8px;
+	}
+
+	form {
+		margin: 100px 0px;
+	}
+}
+
+@media (max-device-width: 699px) {
+	
+	/* Mobile styles */
+	
+	header {
+		background: linear-gradient(270deg, rgba(128,200,250,1) 0%, rgba(255,255,255,1) 98%);
+		box-shadow: -12px 4px 8px #046, 12px 4px 8px #046;
+	}
+	
+	.topbar {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+	}
+
+	.logo {
+		display: none;
+		/*display: block;
+		width: 361px;
+		height: 200px;
+		margin: 0 auto 0 auto;*/
+	}
+	/*
+	.logo > img {
+		display: none;
+		height: 100%
+		margin: 0 auto 0 auto;
+	}*/
+
+	.infocard {
+		display: block;
+		margin: 0;
+		padding: 8px;
+		height: 185px;
+		
+		background: rgba(255, 255, 255, 0.8);
+	}
+
+	.infocard > p {
+		margin: 0;
+		padding-top: 10px;
+		display: block;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	nav {
+		background: #FCF;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		
+		background: rgba(1,105,201, 1);
+		color: #FFF;
+		
+		margin: 0 auto 0 auto;
+	}
+
+	nav a {
+		flex-basis: 200px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		
+		padding: 16px 0px;
+		
+		font-size: 16px;
+		font-weight: bold;
+		
+		text-align: center;
+		text-decoration: none;
+		color: #FFF;
+	}
+
+	nav a:hover,a:active {
+		color: #ff3884;
+		text-shadow: -1px 0px 2px #000, 1px 0px 2px #000, 0px 1px 2px #000, 0px -1px 2px #000, 0px 2px 4px #000;
+	}
+
+	article {
+		padding: 20px 20px;
+		max-width: 100%;
+		overflow: hidden;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 16px;
+		
+	}
+
+	.downloads > li {
+		list-style-type: none;
+	}
+
+	.downloads > li > p {
+		display: block;
+		margin-right: 8px;
+		margin-top: 30px;
+		margin-bottom: 4px;
+	}
+
+	h1,h2 {
+		margin-top: 50px;
+	}
+	
+	table {
+		margin-left: 0px;
+		margin-right: 0px;
+		max-width: 700px;
+	}
+	
+	table,tr,td,th {
+		border: 2px solid #135444;
+		border-collapse: collapse;
+		padding: 4px 12px 4px 12px;
+	}
+
+	th {
+		background-color: #135444;
+		color: white;
+	}
+
+	tr:nth-child(even) {
+		background-color: rgba(74, 207, 174, 0.2);
+	}
+
+	li {
+		margin: 25px 8px;
+	}
+
+	form {
+		margin: 100px 0px;
+	}
+}
+
+/* Gallery Styles */
+
+.gallery_container {
+	display: block;
+	border: 2px solid #000;
+	margin: 20px auto 20px auto;
+	aspect-ratio: 1;
+	max-height: 400px;
+	
+	background-attachment: scroll;
+	background-position: center;
+	background-size: contain;
+	background-color: #000;
+	background-repeat: no-repeat;
+}
+
+.gallery_controls {
+	display: flex;
+	justify-content: space-between;
+	height: 80%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.gallery_controls button {
+	width: 30px;
+}
+
+/* Print Styles */
+
+@media print {
+	header {
+		box-shadow: none;
+	}
+	
+	.logo {
+		width: 100px;
+		height: 100px;
+	}
+	
+	nav {
+		display: none;
+	}
+	
+	/* Gallery styles in print media */
+	/*
+	 * Because of our reliance on backgrounds which aren't drawn in print by default,
+	 * this will never work well, but we'll do the best we can.
+	 */
+	.gallery_controls button {
+		display: none;
+	}
+}
