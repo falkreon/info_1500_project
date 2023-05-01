@@ -2,8 +2,8 @@ title: Cairo Housing Authority
 email: falkreon@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Homepage for the Cairo Housing Authority
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://github.io/falkreon/info_1500_project"
+baseurl: "/info_1500_project" # the subpath of your site, e.g. /blog
+url: "https://falkreon.github.io/"
 github_username:  falkreon
 
 # Build settings
