@@ -5,7 +5,7 @@ layout: default
 # Frequently Asked Questions
 
 **Are pets allowed?**
-: Yes, with some restrictions.  The policy details are listed in the [Pet Policy (PDF)](files/information/pet-policy.pdf).
+: Yes, with some restrictions.  The policy details are listed in the [Pet Policy (PDF)](files/information/pet_policy.pdf).
 
 **Where do residents park?**
 : Residents may park one vehicle per licensed driver on the west side of High Street or the north side of Mecca Street parking stalls. Secondary vehicles and overnight guests are required to park in the overflow area located on the east side of High Street or the south side of Mecca Street.
